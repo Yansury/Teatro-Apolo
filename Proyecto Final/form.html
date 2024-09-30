@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/carrete-de-pelicula.png">
+    <title>Contacto - Teatro Apolo</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__links">
+            <li class="link dropdown">
+                <a href="#">Menú<i class="ri-arrow-down-s-line"></i></a>
+                <ul class="dropdown__menu">
+                    <li><a href="#movies">Cartelera</a></li>
+                    <li><a href="#">Sesiones Hoy</a></li>
+                    <li><a href="#">Próximamente</a></li>
+                </ul>
+            </li>
+        </div>
+        <div class="nav__logo">
+            <a href="index.html"><img src="assets/carrete-de-pelicula.png" alt="logo" /></a>
+        </div>
+        <div class="nav__actions">
+            <input type="text" placeholder="Buscar películas">
+            <div class="search__icon">
+                <i class="ri-search-line"></i>
+            </div>
+            <button class="btn">Entrar</button>
+        </div>
+    </nav>
+
+    <header class="header__form">
+        <h1>Contacto</h1>
+        <p>Escríbenos tu duda, idea o sugerencia</p>
+    </header>
+
+    <div class="purchase__form">
+        <form id="contactForm">
+            <div class="form__group">
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" name="nombre" id="txtNombre" required onblur="validarNombre()">
+            </div>
+
+            <div class="form__group">
+                <label for="txtCorreo">Email:</label>
+                <input type="email" name="correo" id="txtCorreo" required onblur="validarCorreo()">
+            </div>
+
+            <div class="form__group">
+                <label for="asunto">Asunto:</label>
+                <select name="asunto" id="asunto" onblur="validarAsunto()" required>
+                    <option value="">Selecciona un asunto</option>
+                    <option value="op1">Trabaja con Nosotros</option>
+                    <option value="op2">Objetos Perdidos</option>
+                    <option value="op3">Error al Reservar</option>
+                </select>
+            </div>
+
+            <div class="form__group">
+                <label for="txtMensaje">Mensaje:</label>
+                <textarea name="mensaje" id="txtMensaje" required onblur="validarMensaje()"></textarea>
+            </div>
+
+            <div class="form__group">
+                <label for="archivo">Archivo adjunto:</label>
+                <input type="file" id="archivo">
+            </div>
+
+            <div class="form__group">
+                <input type="checkbox" name="acuerdo" id="txtAcuerdo" required onblur="validarAcuerdo()">
+                <label for="txtAcuerdo">Acepto los términos y condiciones</label>
+            </div>
+
+            <div class="form__group">
+                <button type="submit" class="btn">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer__bar">
+        <p>&copy; 2024 Teatro Apolo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

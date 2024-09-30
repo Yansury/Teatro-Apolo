@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="assets/carrete-de-pelicula.png">
+    <title>Teatro Apolo</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__links">
+            <li class="link dropdown">
+                <a href="#">Menú<i class="ri-arrow-down-s-line"></i></a>
+                <ul class="dropdown__menu">
+                    <li><a href="#movies">Cartelera</a></li>
+                    <li><a href="#">Sesiones Hoy</a></li>
+                    <li><a href="#">Próximamente</a></li>
+                </ul>
+            </li>
+        </div>
+        <div class="nav__logo">
+            <a href="index.html"><img src="assets/carrete-de-pelicula.png" alt="logo" /></a>
+        </div>
+        <div class="nav__actions">
+            <input type="text" placeholder="Buscar películas">
+            <div class="search__icon">
+                <i class="ri-search-line"></i>
+            </div>
+            <button class="btn">Entrar</button>
+        </div>
+    </nav>
+
+
+    <header class="header__filters">
+        <div class="filters__buttons">
+            <button class="filter__btn"><a href="#movies">Todas las Películas</a></button>
+            <button class="filter__btn">Hoy</button>
+            <button class="filter__btn">Próximamente</button>
+        </div>
+        <div class="filter__dropdown">
+            <label class="date-select" for="date-select">Seleccionar Fecha: </label>
+            <select id="date-select" class="dropdown__select">
+                <option value="2024-09-29">29 Septiembre 2024</option>
+                <option value="2024-09-30">30 Septiembre 2024</option>
+                <option value="2024-10-01">1 Octubre 2024</option>
+            </select>
+        </div>
+    </header>
+
+
+    <section id="movies" class="section__container movies__container">
+        <div class="movies__header">
+            <h2 class="section__header">Cartelera</h2>
+            <div class="movies__nav">
+                <span><i class="ri-arrow-left-line"></i></span>
+                <span><i class="ri-arrow-right-line"></i></span>
+            </div>
+        </div>
+        <div class="movies__grid">
+            <div class="movies__card">
+                <img src="assets/joker_2.webp" alt="Movie 1" />
+                <h4>Joker 2</h4>
+                <p>Estreno: 3 de Octubre
+                    <br>
+                    Género: Drama, Secuela; Thriller
+                </p>
+                <a href="joker_2.html">Reserve<i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="movies__card">
+                <img src="assets/bettlejuice_2.jpg" alt="Movie 2" />
+                <h4>Beetlejuice 2</h4>
+                <p>Estreno: 5 de Septiembre
+                    <br>
+                    Género: Comedia, Fantasía; Terror
+                </p>
+                <a href="#">Reserve<i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="movies__card">
+                <img src="assets/kill.png" alt="Movie 3" />
+                <h4>Kill. Masacre en el Tren</h4>
+                <p>Estreno: 26 de Septiembre
+                    <br>
+                    Género: Acción
+                </p>
+                <a href="#">Reserve<i class="ri-arrow-right-line"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section__container footer__container">
+        <div class="footer__col">
+            <h4>Películas</h4>
+            <a href="#">Estrenos</a>
+            <a href="#">Cartelera</a>
+            <a href="#">Próximamente</a>
+        </div>
+        <div class="footer__col">
+            <h4>Eventos</h4>
+            <a href="#">Ofertas Especiales</a>
+            <a href="#">Eventos Privados</a>
+            <a href="#">Conciertos</a>
+        </div>
+        <div class="footer__col">
+            <h4>Sobre Nosotros</h4>
+            <a href="#">Quiénes Somos</a>
+            <a href="#">Carreras</a>
+            <a href="form.html">Contáctanos</a>
+        </div>
+        <div class="footer__col">
+            <h4>Síguenos en</h4>
+            <div class="footer__socials">
+                <a href="#"><i class="ri-facebook-fill"></i> Facebook</a>
+                <a href="#"><i class="ri-instagram-line"></i> Instagram</a>
+                <a href="#"><i class="ri-twitter-fill"></i> Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer__bar">
+        Copyright © 2023 Teatro Apolo. All rights reserved.
+    </div>
+
+</body>
+
+</html>

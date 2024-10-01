@@ -1,3 +1,4 @@
 #Proyecto Final
 
-![Captura del preview del programa(reto final)](./Proyecto Final/assets/Captura.png)
+![Captura del preview del programa(reto final)](Teatro-Apolo/Proyecto Final/assets
+/Captura.PNG)

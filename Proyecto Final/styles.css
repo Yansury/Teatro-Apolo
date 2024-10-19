@@ -42,7 +42,6 @@ nav {
     height: auto;
 }
 
-
 .nav__links {
     list-style: none;
     display: flex;
@@ -139,6 +138,122 @@ nav {
     color: var(--white);
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
+}
+
+.user-icon {
+    position: relative;
+}
+
+.login-box{
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color-extra-light);
+    top: 100%;
+    right: 0;
+    padding: 2rem;
+    border: 1px solid #d1d5db;
+    z-index: 100;
+    min-width: 350px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09C372;
+}
+
+.input-control.error input {
+    border-color: #FF3860;
+}
+
+.input-control .error {
+    color: #FF3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.login-box label{
+    color: var(--text-light);
+}
+
+.login-box button {
+    background-color: var(--secondary-color-dark);
+    color: var(--white);
+    font-size: large;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.login-box button:hover {
+    background-color: var(--primary-color-light);
+    color: var(--text-light);
+}
+
+.user-icon a{
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.user-icon a:hover{
+    background-color: var(--primary-color-light);
+}
+
+.user-icon:hover{
+    display: block;
+}
+
+.footer-form{
+    text-align: center;
+}
+
+.footer-form a{
+    background-color: var(--primary-color-extra-light);
+    color: var(--secondary-color);
+    font-size: small;
+}
+
+.footer-form a:hover{
+    background-color: var(--primary-color-extra-light);
+}
+
+.header-form{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header-form h3{
+    color: var(--secondary-color);
+}
+
+.header-form h4{
+    color: var(--primary-color);
 }
 
 header {

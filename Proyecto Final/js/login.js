@@ -49,7 +49,7 @@ const validarInputs = () => {
     const contraseñaValue = contraseña.value.trim();
     
     if (usuarioValue === '') {
-        setError(usuario, 'Los nombres son obligatorios');
+        setError(usuario, 'El usuario es obligatorio');
     } else {
         setSuccess(usuario);
     }

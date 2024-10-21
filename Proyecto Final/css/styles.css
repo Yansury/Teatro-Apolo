@@ -653,7 +653,7 @@ li {
     box-sizing: border-box;
 }
 
-.header__form h1, 
+.header__form h1,
 .header__form p {
     color: var(--text-light);
     text-align: center;
@@ -675,4 +675,86 @@ li {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+}
+
+/*Diseño Registro*/
+
+.container-registro{
+    margin: auto;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: var(--primary-color-extra-light);
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+    margin: 20px;
+    color: var(--secondary-color);
+}
+
+.reg{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-light)
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.birthdate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthdate select{
+    width: 32%;
+}
+
+.terminos {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.autorizacion {
+    text-align: center;
+}
+
+.terminos a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.btn-registro{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--secondary-color-dark);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-registro:hover{
+    background-color: var(--primary-color);
+    color: var(--text-light)
+}
+
+.was-validated small{
+    display: block;
+    color: #FF3860;
 }
